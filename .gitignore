@@ -1,0 +1,24 @@
+# 모델 파일
+*.pt
+*.pth
+*.pkl
+*.onnx
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Node
+node_modules/
+.next/
+
+# 영상 파일
+*.mp4
+*.mkv
+*.avi
+
+# 학습 데이터
+data/raw/
+data/labeled/

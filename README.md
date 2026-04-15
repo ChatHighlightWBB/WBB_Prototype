@@ -1,19 +1,19 @@
-# Capstone_WBB\
+# Capstone_WBB
 스트리밍 영상 내 채팅 데이터를 AI로 분석하여 하이라이트 구간을 자동으로 추출하는 시스템의 백엔드 프로토타입
 
-기술 스택 (Tech Stack)\
+기술 스택 (Tech Stack)
 
-Framework: FastAPI\
+Framework: FastAPI
 
-Computer Vision: OpenCV (cv2)\
+Computer Vision: OpenCV (cv2)
 
-AI/OCR: PaddleOCR (PP-OCRv3)\
+AI/OCR: PaddleOCR (PP-OCRv3)
 
-Language: Python 3.9+\
+Language: Python 3.9+
 
-#실행 방법\
+# 실행 방법
 1. 브랜치 이동\
-git checkout prototype/chatlight-backend\
+git checkout prototype/chatlight-backend
 
 2. 가상환경 설정 및 패키지 설치\
 python -m venv venv\

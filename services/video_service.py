@@ -206,4 +206,8 @@ def extract_chat_frames(analysis_id: str, video_path: str):
         json.dump(pixel_data, f, ensure_ascii=False, indent=4)
     print(f"--- [WBB] 픽셀 데이터 저장 완료: {pixel_path} ---")
 
+    # 5. 하이라이트 파이프라인 실행
+    from services import highlight_service
+    highlight_service.run_highlight_pipeline(analysis_id, video_path)
+
     return saved_count

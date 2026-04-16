@@ -26,8 +26,8 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 3. 서버 실행\
 uvicorn main:wbb --reload
 
-`venv/`, `uploads/`, `models/` 폴더는 Git에 올리지 않음
-PyTorch는 requirements.txt와 별도로 설치해야 함
+`venv/`, `uploads/`, `models/` 폴더는 Git에 올리지 않음\
+PyTorch는 requirements.txt와 별도로 설치해야 함\
 GPU 없는 환경에서는 `ai_engine.py`의 `gpu=True` → `gpu=False` 로 변경
 ## 📁 Project Structure
 

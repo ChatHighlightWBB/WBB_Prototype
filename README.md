@@ -7,9 +7,11 @@ Framework: FastAPI
 
 Computer Vision: OpenCV (cv2)
 
-AI/OCR: PaddleOCR (PP-OCRv3)
+AI/OCR: EasyOCR -> 교체예정 PaddleOCR (PP-OCRv3)
 
 Language: Python 3.9+
+
+GPU: NVIDIA CUDA 12.4 (RTX 계열 권장)
 
 # 실행 방법
 1. 브랜치 이동\
@@ -19,10 +21,14 @@ git checkout prototype/chatlight-backend
 python -m venv venv\
 source venv/Scripts/activate  # Windows 기준\
 pip install -r requirements.txt\
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 
 3. 서버 실행\
 uvicorn main:wbb --reload
 
+`venv/`, `uploads/`, `models/` 폴더는 Git에 올리지 않음
+PyTorch는 requirements.txt와 별도로 설치해야 함
+GPU 없는 환경에서는 `ai_engine.py`의 `gpu=True` → `gpu=False` 로 변경
 ## 📁 Project Structure
 
 ```text
